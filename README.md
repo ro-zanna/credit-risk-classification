@@ -5,7 +5,7 @@ Overview of the Analysis
 
 In this exercise, we applied various techniques to train and evaluate a supervised machine learning model based on loan risk. Using a dataset of historical lending activity, we built a model that can identify the creditworthiness of borrowers by predicting health levels of loans and risk of defaulting.
 
-Factors considered in testing were: loan size, interest rate, borrower income, debt-to-income, number of accounts, derogatory marks, and	total debt. The size of this dataset was 77,536 loans in total.
+Factors considered in testing were: loan size, interest rate, borrower income, debt-to-income ratio, number of accounts, derogatory marks, and	total debt. The size of this dataset was 77,536 loans in total.
 
 First we split up the data into features (X variable) and outcome (y variable). Then we split the data into training (80%) and testing (20%) samples. We fit a logistic regression model to get predictions and retrieved its accuracy score. Then we presented a confusion matrix to the model and generated a classification report for overall metrics. Here we see that the logistic regression model does a fairly good job at predicting healthy and high-risk loans. Precision and recall scores are both at a full 100% for the healthy loans outcome, while high risk loan prediction has precision of 87% (the proportion of loans deemed high-rish that was actually correct) and recall of 89% (the proportion of actual high-risk loans that was identified correctly). Accuracy is at 99% so we can draw a conclusion that this model works well in its predictions.
 
